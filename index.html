@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush Jadhav</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css"
+        integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<header>
+    <div class="page-top animated fadeInDown">
+        <nav class="navbar navbar-expand-sm bg-light navbar-light">
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+                    aria-controls="nav-home" aria-selected="true">Profile</a>
+                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+                    aria-controls="nav-profile" aria-selected="false">Work Experience</a>
+                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
+                    aria-controls="nav-contact" aria-selected="false">Resume</a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+            <img id="profile_pic" src="images/Profile.jpg" alt="Avatar">
+            <h3 title="" class="text-secondary"><a class="text-secondary" href="index.html">Ayush Jadhav</a></h3>
+            <ul class="list-inline d-flex">
+                <li class="list-inline-item mr-4"><a target="_blank"
+                        href="https://linkedin.com/in/ayush-jadhav-4749b1148" rel="me" aria-label="Linkedin"
+                        title="Linkedin"><i class="fab fa-linkedin fa-2x" aria-hidden="false"></i></a></li>
+                <li class="list-inline-item mr-4"><a target="_blank" href="https://github.com/AyushJadhav" rel="me"
+                        aria-label="GitHub" title="GitHub"><i class="fab fa-github fa-2x" aria-hidden="true"></i></a>
+                </li>
+                <li class="list-inline-item"><a href="mailto:jadhavayush13@gmail.com" rel="me" aria-label="e-mail"
+                        title="e-mail"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="col-9">
+            <!-- <div class="content">
+                    <div class="post animated fadeInDown">
+                        <div class="post-title post-content"> -->
+            <h2 id="hi">Hello!</h2>I am Ayush Jadhav and I like to <span id="word">INNO</span>
+            <p></p>
+            <p>I am an experienced professional with over 2 years of expertise in building high-quality Spring Boot
+                microservices for enterprise applications and integrations. During my career, I have successfully
+                optimized legacy code by utilizing advanced Spring features like caching and asynchronous calls. These
+                optimizations have significantly reduced API response times, resulting in improved efficiency and
+                performance. I am dedicated to continuously enhancing my skills and staying updated with emerging
+                technologies to deliver efficient and effective software solutions.
+            </p>
+            <p>I have also volunteered as a science teacher at Camp Diaries, an NGO dedicated to educating
+                underprivileged children.</p>
+            <p>In my leisure time I like to <a href="#">paint</a>,
+                do gardening, and play badminton.</p>
+            <hr>
+            <h2 id="education">Education</h2>
+            <ul>
+                <li>
+                    <p><em><strong>All India Shri Shivaji Memorial Society College of Engineering Pune. (University of
+                                Pune)</strong></em><br>Bachelor of Engineering - Computer Engineering
+                        (Apr 2020)</p>
+                </li>
+            </ul>
+            <!-- <p>Actively looking for Summer 2023 Internship/Co-op opportunities!</p> -->
+            <hr>
+            <p>Feel free to contact me any time via email or message me on LinkedIn to say "hi" :)</p>
+            <!-- </div>
+                    </div>
+                    <div class="pagination"></div>
+                </div> -->
+        </div>
+    </div>
+</div>
+<footer class="footer footer--base">
+    <div class="by_farbox">
+        <ul class="footer__list">
+            <li class="footer__item" class="text-secondary">©
+                Ayush Jadhav
+                2023</li>
+        </ul>
+    </div>
+</footer>
+<script>
+    const wordElement = document.getElementById('word');
+    var words = ["DELIVER...", "INNOVATE...", "CREATE...", "SOLVE..."],
+        part,
+        i = 0,
+        offset = 0,
+        len = words.length,
+        forwards = true,
+        skip_count = 0,
+        skip_delay = 15,
+        speed = 70;
+    var wordflick = function () {
+        setInterval(function () {
+            if (forwards) {
+                if (offset >= words[i].length) {
+                    ++skip_count;
+                    if (skip_count == skip_delay) {
+                        forwards = false;
+                        skip_count = 0;
+                    }
+                }
+            }
+            else {
+                if (offset == 0) {
+                    forwards = true;
+                    i++;
+                    offset = 0;
+                    if (i >= len) {
+                        i = 0;
+                    }
+                }
+            }
+            part = words[i].substr(0, offset);
+            if (skip_count == 0) {
+                if (forwards) {
+                    offset++;
+                }
+                else {
+                    wordElement.innerHTML = ""
+                    offset--;
+                }
+            }
+            wordElement.innerHTML = part;
+        }, speed);
+    }();
+
+// $(document).ready(function () {
+// wordflick();
+// });
+
+</script>
+
+</html>

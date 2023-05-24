@@ -3,5 +3,26 @@ img {
     width: 40%;
     height: auto;
   }
-
+  .navbar {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .navbar.fade-in {
+    opacity: 1;
+  }
+ .container{
+  opacity: 0;
+    transition: opacity 0.9s ease-in-out;
+ }
+ .container.fade-in {
+  opacity: 1;
+}
+  
+  
+  
+  
+  
+  
+  
  

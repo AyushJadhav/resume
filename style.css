@@ -1,29 +1,165 @@
-img {
-    border-radius: 50%;
-    width: 40%;
-    height: auto;
-  }
-  .navbar {
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-  }
-  
-  .navbar.fade-in {
-    opacity: 1;
-  }
- .container{
-  opacity: 0;
-    transition: opacity 0.9s ease-in-out;
- }
- .container.fade-in {
-  opacity: 1;
+/* General Styles */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; /* Light gray background */
 }
 
-  
-  
-  
-  
-  
-  
-  
- 
+.navbar {
+    background-color: #343a40 !important; /* Dark background for navbar */
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff !important; /* White color for navbar links */
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #17a2b8 !important; /* Hover color for navbar links */
+}
+
+.header {
+    padding: 60px;
+    text-align: center;
+    background: #333;
+    color: #f1f1f1;
+}
+
+/* Profile Section */
+
+#profile {
+    background-color: #ffffff; /* White background for profile section */
+    padding: 50px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+#profile .text-dark {
+    color: #343a40; /* Darker color for text in profile section */
+}
+
+#profile .list-inline-item a {
+    color: #343a40; /* Darker color for social icons in profile section */
+}
+
+#profile .list-inline-item a:hover {
+    color: #17a2b8; /* Hover color for social icons in profile section */
+}
+
+/* Work Experience Section */
+
+#work-experience {
+    background-color: #343a40; /* Dark background for work experience section */
+    color: #ffffff; /* White text color for work experience section */
+    padding: 50px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+#work-experience .card-title {
+    color: #ffffff; /* White color for card titles */
+}
+
+#work-experience .card-body {
+    color: #ffffff; /* White color for card body text */
+}
+
+#work-experience ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#work-experience ul li {
+    margin-bottom: 10px;
+    color: #343a40; /* Darker color for text in education section */
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+/* Education Section */
+
+#education {
+    background-color: #ffffff; /* White background for education section */
+    color: #343a40; /* Darker color for text in education section */
+    padding: 50px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+#education .card-title {
+    color: #343a40; /* Darker color for card titles */
+}
+
+/* Achievements Section */
+
+#achievements {
+    background-color: #ffffff; /* White background for achievements section */
+    color: #343a40; /* Darker color for text in achievements section */
+    padding: 50px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+#achievements .card-title {
+    color: #343a40; /* Darker color for card titles */
+}
+
+#achievements .card-text {
+    color: #343a40; /* Darker color for card text */
+}
+
+/* Contact Me Section */
+
+#contact {
+    background-color: #f8f9fa; /* Light gray background for contact section */
+    color: #343a40; /* Darker color for text in contact section */
+    padding: 50px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+#contact .display-4 {
+    color: #343a40; /* Darker color for contact section heading */
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact-form .form-group label {
+    color: #343a40; /* Darker color for form labels */
+}
+
+.contact-form .btn-primary {
+    background-color: #343a40; /* Dark background for submit button */
+    color: #ffffff; /* White text color for submit button */
+    border: none;
+}
+
+.contact-form .btn-primary:hover {
+    background-color: #17a2b8; /* Hover background color for submit button */
+}
+
+/* Button style */
+.certificate-button {
+  color: #000; /* Black color */
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  align-items: center; /* Center icon and text vertically */
+}
+
+.certificate-button:hover {
+  transform: scale(1.1); /* Scale up on hover */
+}
+
+.certificate-button i {
+  margin-right: 5px; /* Add space between icon and text */
+}
+
+/* Score style */
+.score {
+  font-weight: bold;
+  color: #032242; /* Blue color for score */
+}
+

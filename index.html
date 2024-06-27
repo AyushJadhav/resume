@@ -10,151 +10,201 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css"
         integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Ayush Jadhav</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#profile">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#work-experience">Work Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Resume-24-01-2024.pdf" onClick="openTab(this)"
+                            name="Resume-24-01-2024.pdf">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container my-5" id="profile">
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <img id="profile_pic" src="images/Profile.jpg" alt="Avatar" class="img-fluid rounded-circle mb-3">
+                <h3 class="display-5 text-dark">Ayush Jadhav</h3>
+                <ul class="list-inline">
+                    <li class="list-inline-item mr-4"><a target="_blank"
+                            href="https://linkedin.com/in/ayush-jadhav-4749b1148" aria-label="Linkedin"
+                            title="Linkedin"><i class="fab fa-linkedin fa-2x"></i></a></li>
+                    <li class="list-inline-item mr-4"><a target="_blank" href="https://github.com/AyushJadhav"
+                            aria-label="GitHub" title="GitHub"><i class="fab fa-github fa-2x"></i></a></li>
+                    <li class="list-inline-item"><a href="mailto:jadhavayush13@gmail.com" aria-label="e-mail"
+                            title="e-mail"><i class="fa fa-envelope fa-2x"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-8 text-dark">
+                <h1 class="display-4 animated-title">I am Ayush Jadhav and I like to <span id="word">INNOVATE...</span>
+                </h1>
+                <p class="lead">I am an experienced professional with over <strong>3 years</strong> of expertise in
+                    building high-quality Spring Boot microservices for enterprise applications and integrations. During
+                    my career, I have:</p>
+                <ul class="lead">
+                    <li>Optimized legacy code with advanced Spring features like caching and asynchronous calls.</li>
+                    <li>Reduced API response times by <strong>up to 50%</strong>, enhancing efficiency and performance.
+                    </li>
+                    <li>Led and mentored a team of <strong>5 developers</strong> in implementing robust software
+                        solutions.</li>
+                </ul>
+                <p class="lead">I am dedicated to continuously enhancing my skills and staying updated with emerging
+                    technologies to deliver efficient and effective software solutions.</p>
+                <p class="lead">I have also volunteered as a science teacher at Camp Diaries, an NGO dedicated to
+                    educating underprivileged children, impacting the lives of <strong>over 100 students</strong>.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5 bg-dark text-white" id="work-experience">
+        <h2 class="display-3 mb-4">Work Experience</h2>
+
+        <div class="card mb-4">
+            <div class="card-body">
+                <h4 class="card-title">Software Developer at Cognizant, Pune (2020-2023)</h4>
+                <ul>
+                    <li class="lead mb-2">Expertly designed and developed RESTful web services.</li>
+                    <li class="lead mb-2">Contributed to the development, unit-testing, and deployment of microservices,
+                        ensuring reliability and stability through the implementation of JUnit test cases.</li>
+                    <li class="lead mb-2">Improved application performance by implementing a caching mechanism for high-load
+                        APIs.</li>
+                    <li class="lead mb-2">Created batch jobs to refresh cached data from the database using Spring Batch.</li>
+                    <li class="lead mb-2">Migrated legacy code from .NET to Java based microservice and also worked on code
+                        optimization.</li>
+                    <li class="lead mb-2">Developed a Spring Boot based microservice for requesting and validating JWT token,
+                        using Spring Security.</li>
+                    <li class="lead mb-2">Conducted successful migration of all services from OpenShift version 3 to 4.</li>
+                    <li class="lead mb-2">Contributed to the team’s success with stress testing, sprint planning, scrum
+                        management, knowledge transfer sessions, and support during production deployments, interacting with
+                        clients as needed under agile model.</li>
+                    <li class="lead mb-2">Efficiently upgraded project based on java 8 to java 17.</li>
+                    <li class="lead mb-2">Modified existing Angular components as per new enhancements.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5 bg-light text-dark" id="education">
+        <h2 class="display-3 mb-4">Education</h2>
+
+        <div class="card mb-4">
+            <div class="card-body">
+                <h4 class="card-title">MSc in Cloud Computing - National College of Ireland (Present)</h4>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-body">
+                <h4 class="card-title">Bachelor of Engineering - Computer Engineering (Apr 2020)<br>
+                    All India Shri Shivaji Memorial Society College of Engineering Pune. (University of Pune)</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5 bg-light text-dark" id="achievements">
+        <h2 class="display-3 mb-4">Achievements</h2>
+    
+        <div class="card mb-4">
+            <div class="card-body">
+                <h4 class="card-title">NPTEL ELITE + GOLD CERTIFICATION IN JAVA PROGRAMMING LANGUAGE</h4>
+                <p class="card-text">Score: <span class="score">96</span></p>
+                <button class="btn btn-link certificate-button" onclick="showCertificate('java')">
+                    <i class="fas fa-certificate fa-2x"></i> Show Certificate
+                </button>
+            </div>
+        </div>
+    
+        <div class="card mb-4">
+            <div class="card-body">
+                <h4 class="card-title">NPTEL ELITE + GOLD CERTIFICATION IN INTERNET OF THINGS</h4>
+                <p class="card-text">Score: <span class="score">98</span></p>
+                <button class="btn btn-link certificate-button" onclick="showCertificate('iot')">
+                    <i class="fas fa-certificate fa-2x"></i> Show Certificate
+                </button>
+            </div>
+        </div>
+    
+        <!-- Modal for displaying certificate images -->
+        <div class="modal fade" id="certificateModal" tabindex="-1" role="dialog" aria-labelledby="certificateModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="certificateModalLabel">Certificate Image</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="" id="certificateImage" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    
+    
+    
+
+    <!-- <div class="container my-5 bg-light text-dark" id="contact">
+        <h3 class="display-4 mb-4">Contact Me</h3>
+        <form id="contactForm" class="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" class="form-control" id="subject" placeholder="Subject">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Type your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-outline-dark">Submit</button>
+        </form>
+    </div> -->
+
+    <footer class="footer footer--base bg-dark text-white">
+        <div class="container">
+            <ul class="footer__list list-inline">
+                <li class="footer__item list-inline-item">© Ayush Jadhav 2023</li>
+            </ul>
+        </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
-    
-</head>
-<header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="index.html">Profile</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="workexperience.html">Work Experience</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" onClick="openTab(this)" href="#" name="Resume-24-01-2024.pdf">Resume</a>
-              </li>
-          </ul>
-        </div>
-      </nav>
-</header>
-
-<div class="container">
-    <div class="row">
-        <div class="col-4">
-            <img id="profile_pic" src="images/Profile.jpg" alt="Avatar">
-            <h3 class="display-5"><a class="text-secondary" href="index.html">Ayush Jadhav</a></h3>
-            <ul class="list-inline d-flex">
-                <li class="list-inline-item mr-4"><a target="_blank"
-                        href="https://linkedin.com/in/ayush-jadhav-4749b1148" rel="me" aria-label="Linkedin"
-                        title="Linkedin"><i class="fab fa-linkedin fa-2x" aria-hidden="false"></i></a></li>
-                <li class="list-inline-item mr-4"><a target="_blank" href="https://github.com/AyushJadhav" rel="me"
-                        aria-label="GitHub" title="GitHub"><i class="fab fa-github fa-2x" aria-hidden="true"></i></a>
-                </li>
-                <li class="list-inline-item"><a href="mailto:jadhavayush13@gmail.com" rel="me" aria-label="e-mail"
-                        title="e-mail"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></li>
-            </ul>
-        </div>
-
-        <div class="col-9">
-            <h3 class="display-4">HELLO!</h3><p class="lead">I am Ayush Jadhav and I like to <span id="word">INNO</span></p>
-            <p></p>
-            <p class="lead">I am an experienced professional with over 3 years of expertise in building high-quality Spring Boot
-                microservices for enterprise applications and integrations. During my career, I have successfully
-                optimized legacy code by utilizing advanced Spring features like caching and asynchronous calls. These
-                optimizations have significantly reduced API response times, resulting in improved efficiency and
-                performance. I am dedicated to continuously enhancing my skills and staying updated with emerging
-                technologies to deliver efficient and effective software solutions.
-            </p>
-            <p class="lead">I have also volunteered as a science teacher at Camp Diaries, an NGO dedicated to educating
-                underprivileged children.</p>
-            
-            <hr>
-            <h3  class="display-4" id="education">EDUCATION</h3>
-            <ul>
-                <li>
-                    <p class="lead"><em><strong> National College of Ireland (Present)</strong></em><br>Msc in Cloud Computing</p>
-                </li>
-                <li>
-                    <p class="lead"><em><strong>All India Shri Shivaji Memorial Society College of Engineering Pune. (University of
-                                Pune)</strong></em><br>Bachelor of Engineering - Computer Engineering
-                        (Apr 2020)</p>
-                </li>
-            </ul>
-            <hr>
-            <h3  class="display-4" id="achievements">Achievements</h3>
-            <ul>
-                <li>
-                    <p class="lead"><em><strong> NPTEL ELITE + GOLD CERTIFICATION IN JAVA PROGRAMMING LANGUAGE</strong></em><br></p>
-                    <p>Score: 96</p>
-                </li>
-                <li>
-                    <p class="lead"><em><strong>NPTEL ELITE + GOLD CERTIFICATION IN INTERNET OF THINGS</strong></em></p>
-                    <p>Score: 98</p>
-                </li>
-            </ul>
-            <hr>
-            <p>Feel free to reach out to me via email or ping me on LinkedIn to say "hi" :)</p>
-        </div>
-    </div>
-</div>
-<footer class="footer footer--base">
-    <div class="by_farbox">
-        <ul class="footer__list">
-            <li class="footer__item" class="text-secondary">©
-                Ayush Jadhav
-                2023</li>
-        </ul>
-    </div>
-</footer>
-<script>
-    const wordElement = document.getElementById('word');
-    var words = ["INNOVATE...", "CREATE...", "SOLVE...","DELIVER..."],
-        part,
-        i = 0,
-        offset = 0,
-        len = words.length,
-        forwards = true,
-        skip_count = 0,
-        skip_delay = 15,
-        speed = 70;
-    var wordflick = function () {
-        setInterval(function () {
-            if (forwards) {
-                if (offset >= words[i].length) {
-                    ++skip_count;
-                    if (skip_count == skip_delay) {
-                        forwards = false;
-                        skip_count = 0;
-                    }
-                }
-            }
-            else {
-                if (offset == 0) {
-                    forwards = true;
-                    i++;
-                    offset = 0;
-                    if (i >= len) {
-                        i = 0;
-                    }
-                }
-            }
-            part = words[i].substr(0, offset);
-            if (skip_count == 0) {
-                if (forwards) {
-                    offset++;
-                }
-                else {
-                    wordElement.innerHTML = ""
-                    offset--;
-                }
-            }
-            wordElement.innerHTML = part;
-        }, speed);
-    }();
-</script>
+</body>
 
 </html>

@@ -12,6 +12,53 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <script src="script.js" defer></script>
+    <style>
+        /* Custom styles for skills section */
+        .skills {
+            margin-top: 50px;
+            background-color: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .skill-item {
+            margin-bottom: 20px;
+        }
+
+        .skill-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #343a40;
+        }
+
+        .progress {
+            height: 10px;
+            background-color: #e9ecef;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            transition: width 1s ease;
+            height: 100%;
+        }
+
+        /* Animation for progress bars */
+        @keyframes progressAnimation {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 100%;
+            }
+        }
+
+        .animate-progress {
+            animation: progressAnimation 2s ease;
+        }
+    </style>
 </head>
 
 <body>
@@ -34,9 +81,7 @@
                         <a class="nav-link" href="Resume-24-01-2024.pdf" onClick="openTab(this)"
                             name="Resume-24-01-2024.pdf">Resume</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact Me</a>
-                    </li>
+                    
                 </ul>
             </div>
         </nav>
@@ -79,6 +124,10 @@
         </div>
     </div>
 
+   
+
+
+
     <div class="container my-5 bg-dark text-white" id="work-experience">
         <h2 class="display-3 mb-4">Work Experience</h2>
 
@@ -113,13 +162,69 @@
         <div class="card mb-4">
             <div class="card-body">
                 <h4 class="card-title">MSc in Cloud Computing - National College of Ireland (Present)</h4>
+                <div class="project-details">
+                    <br><br>
+                    <h5 class="project-title">Project: Django Application: SnapVibe</h5>
+                    <p class="card-text">
+                        SnapVibe allows users to share images, add captions, and interact with posts from other users through
+                        likes and comments. The aim of the application is to provide an interface where users can share the
+                        photographs of the newly discovered places and suggest such places for a nice visit and also,
+                        providing functionalities like uploading, viewing, liking, and commenting on posts of a large community
+                        of users.
+                        <br><br>
+                        <strong>Technologies Used:</strong><br>
+                        <span class="badge bg-primary">AWS Elastic Beanstalk</span>
+                        <span class="badge bg-primary">CodePipeline</span>
+                        <span class="badge bg-primary">Django</span>
+                        <span class="badge bg-primary">SQLite</span>
+                        <span class="badge bg-primary">HTML5</span>
+                        <span class="badge bg-primary">Bootstrap 5</span>
+                        <span class="badge bg-primary">DevOps CI/CD</span>
+                        <span class="badge bg-primary">Pylint</span>
+                        <span class="badge bg-primary">SonarCloud</span>
+                        <br><br>
+                        The application is deployed on AWS Elastic Beanstalk using CodePipeline for continuous integration and
+                        deployment. Pylint performs static code analysis, and security vulnerabilities are managed by
+                        SonarCloud. Django, a high-level Python web framework, handles user registrations, authentication, and
+                        database interactions using SQLite. HTML5 and Bootstrap 5 are used for the front-end to ensure
+                        responsiveness and user-friendly interface.
+                        <br><br>
+                       
+                    <strong>Resources:</strong><br>
+                    <a href="files/ieee.pdf" target="_blank">IEEE Paper (PDF)</a><br>
+                    <a href="https://github.com/AyushJadhav/SnapVibe" target="_blank">GitHub Repository</a><br>
+                    <a href="https://www.youtube.com/watch?v=lKJBsQ-dmR4" target="_blank">Video Demonstration</a>
+                </p>
             </div>
         </div>
+        
 
         <div class="card mb-4">
             <div class="card-body">
                 <h4 class="card-title">Bachelor of Engineering - Computer Engineering (Apr 2020)<br>
                     All India Shri Shivaji Memorial Society College of Engineering Pune. (University of Pune)</h4>
+
+                    <div class="project-details">
+                        <br><br>
+                        <h5 class="project-title">Project: Android Application: GoFit</h5>
+                        <p class="card-text">
+                            GoFit is an Android application designed to help users track fitness metrics conveniently using their smartphones. It offers three main functionalities: calculating Body Mass Index (BMI), a push-up counter utilizing the proximity sensor, and a step counter using the accelerometer sensor.
+                            <br><br>
+                            <strong>Technologies Used:</strong><br>
+                            <span class="badge bg-primary">Java</span>
+                            <span class="badge bg-primary">Android</span>
+                            <span class="badge bg-primary">Firebase</span>
+                            
+                            <br><br>
+                            GoFit empowers users to monitor their fitness progress conveniently through their smartphones. By leveraging sensor technologies and cloud capabilities, it provides accurate fitness metrics and encourages users to maintain a healthy lifestyle.
+                            <br><br>
+                           
+                        <strong>Resources:</strong><br>
+                        
+                        <a href="https://github.com/AyushJadhav/GoFit" target="_blank">GitHub Repository</a><br>
+                        
+                    </p>
+                </div>
             </div>
         </div>
     </div>
@@ -167,8 +272,93 @@
     
     </div>
     
-    
-    
+     <!-- Skills Section -->
+     <div class="container my-5">
+        <div class="skills">
+            <h2 class="display-4 mb-4 text-center text-dark">Skills</h2>
+
+            <!-- Skill: Java -->
+            <div class="skill-item">
+                <h4 class="skill-title">Java</h4>
+                <div class="progress">
+                    <div class="progress-bar bg-success progress-bar-striped progress-bar-animated"
+                        style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                </div>
+            </div>
+
+            <!-- Skill: Python -->
+            <div class="skill-item">
+                <h4 class="skill-title">Python</h4>
+                <div class="progress">
+                    <div class="progress-bar bg-info progress-bar-striped progress-bar-animated"
+                        style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                </div>
+            </div>
+
+            <!-- Skill: Django -->
+            <div class="skill-item">
+                <h4 class="skill-title">Django</h4>
+                <div class="progress">
+                    <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated"
+                        style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                </div>
+            </div>
+
+            <!-- Skill: AWS -->
+            <div class="skill-item">
+                <h4 class="skill-title">AWS</h4>
+                <div class="progress">
+                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated"
+                        style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                </div>
+            </div>
+
+            <!-- Skill: HTML5/CSS -->
+            <div class="skill-item">
+                <h4 class="skill-title">HTML5/CSS</h4>
+                <div class="progress">
+                    <div class="progress-bar bg-primary progress-bar-striped progress-bar-animated"
+                        style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                </div>
+            </div>
+
+            <!-- Skill: Bootstrap -->
+            <div class="skill-item">
+                <h4 class="skill-title">Bootstrap</h4>
+                <div class="progress">
+                    <div class="progress-bar bg-secondary progress-bar-striped progress-bar-animated"
+                        style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                </div>
+            </div>
+
+            <!-- Skill: Angular -->
+            <div class="skill-item">
+                <h4 class="skill-title">Angular</h4>
+                <div class="progress">
+                    <div class="progress-bar bg-success progress-bar-striped progress-bar-animated"
+                        style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
+                </div>
+            </div>
+
+        <!-- Skill: Spring Boot -->
+        <div class="skill-item">
+            <h4 class="skill-title">Spring Boot</h4>
+            <div class="progress">
+                <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated"
+                        style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                </div>
+        </div>
+
+        <!-- Skill: Apache Kafka/ActiveMQ -->
+        <div class="skill-item">
+            <h4 class="skill-title">Apache Kafka/ActiveMQ</h4>
+            <div class="progress">
+                <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated"
+                        style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                </div>
+    </div>
+    </div>
+    </div>
 
     <!-- <div class="container my-5 bg-light text-dark" id="contact">
         <h3 class="display-4 mb-4">Contact Me</h3>

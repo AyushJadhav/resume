@@ -123,3 +123,20 @@ function showCertificate(type) {
     // Show the modal
     $('#certificateModal').modal('show');
 }
+// Function to handle the Resume link logic
+function openResume() {
+    // Check if the current URL contains '/grad'
+    if (window.location.pathname.includes('/grad')) {
+        window.location.href = "Ayush_Jadhav_2024.pdf"; // Redirect to the new PDF file
+    } else {
+        window.location.href = "Ayush_Jadhav_Resume.pdf"; // Default resume PDF
+    }
+}
+
+// Check URL and redirect if needed
+window.onload = function () {
+    // If URL contains '/grad', set the resume link to 'Ayush_Jadhav_2024.pdf'
+    if (window.location.pathname.includes('/grad')) {
+        document.getElementById('resume-link').href = "Ayush_Jadhav_2024.pdf";
+    }
+};

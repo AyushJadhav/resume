@@ -129,7 +129,7 @@ function openResume() {
     if (window.location.pathname.includes('/grad')) {
         window.location.href = "Ayush_Jadhav_2025.pdf"; // Redirect to the new PDF file
     } else {
-        window.location.href = "Ayush_Jadhav_Resume.pdf"; // Default resume PDF
+        window.location.href = "Ayush_Jadhav_2025.pdf"; // Default resume PDF
     }
 }
 

@@ -127,7 +127,7 @@ function showCertificate(type) {
 function openResume() {
     // Check if the current URL contains '/grad'
     if (window.location.pathname.includes('/grad')) {
-        window.location.href = "Ayush_Jadhav_2024.pdf"; // Redirect to the new PDF file
+        window.location.href = "Ayush_Jadhav_2025.pdf"; // Redirect to the new PDF file
     } else {
         window.location.href = "Ayush_Jadhav_Resume.pdf"; // Default resume PDF
     }
